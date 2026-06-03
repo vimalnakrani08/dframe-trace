@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dframe-trace"
+version = "0.3.0"
+description = "Automatic causal tracing for Python DataFrame pipelines: find where nulls, rows, and dtypes silently changed."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Vimal Nakrani", email = "vimalnak@gmail.com" }]
+keywords = ["pandas", "polars", "data-pipeline", "debugging", "lineage", "data-quality"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Debuggers",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = []   # works with any object exposing the pandas-like API
+
+[project.optional-dependencies]
+test = ["pandas", "numpy", "polars", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/vimalnakrani08/dframe-trace"
+Issues = "https://github.com/vimalnakrani08/dframe-trace/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dframe_trace*"]
