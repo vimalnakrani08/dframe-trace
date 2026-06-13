@@ -2,7 +2,7 @@
 
 **Find out where your data pipeline silently broke — without writing a single rule.**
 
-<img width="950" height="282" alt="image" src="https://github.com/user-attachments/assets/13fc0f73-8215-4a05-9180-759282f1d6e7" />
+<img width="1000" height="420" alt="image" src="https://github.com/user-attachments/assets/1ae12a64-56c3-4dc4-9c5d-9c29aa634f79" />
 
 *dframe-trace pinpoints which step introduced nulls or dropped rows — no rules to write.*
 
