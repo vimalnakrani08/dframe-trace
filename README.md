@@ -2,6 +2,10 @@
 
 **Find out where your data pipeline silently broke — without writing a single rule.**
 
+<img width="950" height="282" alt="image" src="https://github.com/user-attachments/assets/13fc0f73-8215-4a05-9180-759282f1d6e7" />
+
+*dframe-trace pinpoints which step introduced nulls or dropped rows — no rules to write.*
+
 When you process data in pandas or polars, each step quietly reshapes it: a join
 introduces blank values, a filter drops rows you didn't expect, a cast turns
 whole numbers into decimals. These bugs don't crash your program — they just
